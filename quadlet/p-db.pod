@@ -1,0 +1,7 @@
+[Unit]
+Description=Database Pod
+
+[Pod]
+ServiceName=pp-db
+PodName=DB
+Network=p-internal.network

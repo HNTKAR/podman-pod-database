@@ -1,0 +1,11 @@
+[Unit]
+Description=MariaDB Container
+
+[Container]
+Image=p-mariadb.build
+Pod=p-db.pod
+ContainerName=db-mariadb
+Environment=MARIADB_ROOT_PASSWORD=PASSWORD
+
+[Install]
+WantedBy=multi-user.target

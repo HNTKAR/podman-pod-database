@@ -3,5 +3,5 @@ Description=Database Pod
 
 [Pod]
 ServiceName=pp-db
-PodName=DB
+PodName=db
 Network=p-internal.network

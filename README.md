@@ -4,8 +4,10 @@
 
 ```bash
 cd /PATH/TO/podman-pod-database
-cp quadlet/p-* ~/.config/containers/systemd/
+rm -r $HOME/.config/containers/systemd/p-db*
+./replace.sh
+mkdir -p ~/.config/containers/systemd
+cp tmp/p-* ~/.config/containers/systemd/
 systemctl --user daemon-reload
 systemctl --user restart pp-db
 ```
-

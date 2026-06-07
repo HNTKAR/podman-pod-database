@@ -1,0 +1,8 @@
+[Unit]
+Description=Build MariaDB Container
+
+[Build]
+SetWorkingDirectory=WORKING_DIR_PATH
+ServiceName=pb-db-mariadb
+ImageTag=db-mariadb
+File=mariadb.Containerfile

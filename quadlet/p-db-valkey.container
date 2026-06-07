@@ -1,0 +1,11 @@
+[Unit]
+Description=Valkey Container
+
+[Container]
+Image=docker.io/valkey/valkey:9-alpine
+Pod=p-db.pod
+ContainerName=db-valkey
+ServiceName=pc-db-valkey
+
+[Install]
+WantedBy=multi-user.target

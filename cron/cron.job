@@ -1,0 +1,1 @@
+* * * * *  mariadb-dump  -h $DB_HOST -u $DB_USER -p$DB_PASSWORD --all-databases > /backup/$(date +%Y%m%d).sql

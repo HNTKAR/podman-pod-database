@@ -1,0 +1,12 @@
+[Unit]
+Description=cron Container
+
+[Container]
+Image=p-db-cron.build
+Pod=p-db.pod
+ContainerName=db-cron
+ServiceName=pc-db-cron
+Mount=type=volume,source=p-db.volume,destination=/backup
+
+[Install]
+WantedBy=multi-user.target

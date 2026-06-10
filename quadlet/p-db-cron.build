@@ -1,0 +1,8 @@
+[Unit]
+Description=Build cron Container
+
+[Build]
+SetWorkingDirectory=WORKING_DIR_PATH
+ServiceName=pb-db-cron
+ImageTag=db-cron
+File=cron.Containerfile

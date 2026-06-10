@@ -5,7 +5,6 @@ Description=MariaDB Container
 Image=p-db-mariadb.build
 Pod=p-db.pod
 ContainerName=db-mariadb
-Environment=MARIADB_ROOT_PASSWORD=PASSWORD
 ServiceName=pc-db-mariadb
 
 [Install]
